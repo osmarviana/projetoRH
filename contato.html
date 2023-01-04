@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>OVT RH</title>
+    <link rel="stylesheet" href="./contato.css" />
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="./logoRh.png">
+        <h1>OVT Consultoria em RH</h1>
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./galeria.html">
+                    <li>Galeria</li>
+                </a>
+                <a href="./vagas.html">
+                    <li>Vagas</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <form action="./contato.html">
+        <p>Contato</p><br>
+        <label for="name">Nome</label>
+        <input style="display: block" id="name" type="text" name="name" placeholder="insira seu nome completo" />
+        <br>
+        <label for="email">E-mail</label>
+        <input style="display: block" id="email" type="email" name="email" placeholder="insira um email válido" />
+        <br>
+        <label for="fone">Telefone</label>
+        <input style="display: block" id="fone" type="tel" name="fone" placeholder="(00) 00000-0000" />
+        <br>
+        Assunto
+        <select style="display: block" name="assunto">
+            <option value="empty"></option>
+            <option value="Duvida">Dúvida</option>
+            <option value="Reclamacao">Reclamação</option>
+            <option value="Outro">Outro</option>
+        </select><br>
+        Descrição
+        <textarea id="mensagem" class="input-padrao" required></textarea>
+        <br>
+        <button>Enviar</button>
+    </form>
+
+    <footer>
+        <img style="object-fit: contain;" id="logo" src="./logoRh.png" />
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: Osmar Viana</span>
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./galeria.html">
+                    <li>Galeria</li>
+                </a>
+                <a href="./vagas.html">
+                    <li>Vagas</li>
+                </a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

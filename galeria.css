@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(14, 121, 193);
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+nav {
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: rgb(14, 121, 193);
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li:hover {
+    color: rgb(50, 170, 250);
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+}
+
+h1 {
+    color: rgb(50, 170, 250);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    row-gap: 20px;
+    column-gap: 30px;
+    margin: auto 10px;
+}
+
+.card {
+    width: 90%;
+    height: 300px;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding: 0 0 20px 10px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner1 {
+    background-image: url(https://www.globalempregos.com.br/wp-content/uploads/2022/03/recursos-humanos.jpg);
+}
+
+.banner2 {
+    background-image: url(https://ead.pucpr.br/hs-fs/hubfs/recrutamento-selecao-quais-sao-ultimas-tendencias.jpg?width=1000&name=recrutamento-selecao-quais-sao-ultimas-tendencias.jpg);
+}
+
+.banner3 {
+    background-image: url(https://octogo.com.br/wp-content/uploads/2022/02/8-erros-de-recrutamento-e-selecao-que-sua-empresa-precisa-evitar.jpeg);
+}
+
+.banner4 {
+    background-image: url(https://i.ytimg.com/vi/dlv1Ih6IwKM/maxresdefault.jpg);
+}
+
+.banner5 {
+    background-image: url(https://mindsight.com.br/wp-content/uploads/2020/07/ciclo-de-gente.png);
+}
+
+.banner6 {
+    background-image: url(https://coodesh.com/blog/wp-content/uploads/2020/08/processo-de-recrutamento-e-selecao-1-scaled.jpg);
+}
+
+
+footer {
+    background-color: whitesmoke;
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+span {
+    color: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    h1 {
+        font-size: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    #logo {
+        width: 60px;
+        height: auto;
+    }
+
+}
