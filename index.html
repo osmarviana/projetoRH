@@ -1,75 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <meta charset="UFT-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Busca RH</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
 
-<head>
-    <meta charset="UFT-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>OVT RH</title>
-    <link rel="stylesheet" href="./styles.css" />
-</head>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
 
-<body>
-    <header>
-        <img id="logo" src="./logoRh.png" />
-        <h1>OVT Consultoria em RH</h1>
+    <script
+      src="https://kit.fontawesome.com/a6af6215d3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          class="logo-header"
+          src="./assets/img/logo-rh2.png"
+          alt="logo da empresa Busca RH"
+        />
         <nav>
-            <ul>
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./contato.html">
-                    <li>Contato</li>
-                </a>
-                <a href="./galeria.html">
-                    <li>Galeria</li>
-                </a>
-                <a href="./vagas.html">
-                    <li>Vagas</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-    <div id="banner"></div>
-    <div id="explica-container">
-        <div class="content">
-            <video controls class="video">
-                <source src="./videoDicasRh.mp4" type="video/mp4">
-                seu navegador não possui suporte para vídeo.
-            </video>
-            <div id="explica">
-                <p class="description">
-                    A busca por uma vaga no mercado de trabalho costuma ser bastante disputada no país. É assim nos mais
-                    diferentes segmentos e tipos de cargos. Sempre que uma oportunidade aparece, inúmeras pessoas se
-                    apresentam para trabalhar. Isso torna a missão dos avaliadores ainda mais difícil. Muitas vezes,
-                    eles têm que selecionar um único candidato entre uma série de profissionais qualificados. Dessa
-                    forma, fica a dúvida: como se sair bem em uma entrevista de emprego?
-                </p>
-                <button class="button">Inscreva-se</button>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <img style="object-fit: contain;" id="logo" src="./logoRh.png" />
-        <span>Todos os direitos reservados ©</span>
-        <span>Desenvolvido por: Osmar Viana</span>
-        <nav class="footer-navigation">
-            <ul class="footer-list">
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./contato.html">
-                    <li>Contato</li>
-                </a>
-                <a href="./galeria.html">
-                    <li>Galeria</li>
-                </a>
-                <a href="./vagas.html">
-                    <li>Vagas</li>
-                </a>
-            </ul>
-        </nav>
-    </footer>
-</body>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
 
+            <li><a href="./assets/html/contato.html">Contato</a></li>
+
+            <li>
+              <a href="#">Vagas +</a>
+              <div class="sub-menu-1">
+                <ul>
+                  <li><a href="./assets/html/cadastro.html">Cadastre-se</a></li>
+                  <li><a href="./assets/html/vagas.html">Inscreva-se</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="banner"></div>
+      <div class="search-form">
+        <h1>Encontre sua vaga</h1>
+        <form class="form-container">
+          <input type="text" name="job" placeholder="Digite o cargo" />
+          <select name="region">
+            <option value="">Todos os estados</option>
+          </select>
+          <select name="category">
+            <option value="">Categoria</option>
+          </select>
+          <input type="submit" value="Pesquisar" />
+        </form>
+      </div>
+      <div class="painel">
+        <h1>Painel informativo</h1>
+        <p>Aqui você encontra as melhores dicas para estar sempre preparado!</p>
+      </div>
+      <main class="main-container">
+        <div class="content">
+          <video controls class="video">
+            <source src="./assets/video/videoDicasRh.mp4" type="video/mp4" />
+            Seu navegador não possui suporte para vídeo.
+          </video>
+          <div class="container-description">
+            <p>
+              A busca por uma vaga no mercado de trabalho costuma ser bastante
+              disputada. É assim nos mais diferentes segmentos e tipos de
+              cargos. Sempre que uma oportunidade aparece, inúmeras pessoas se
+              apresentam para trabalhar. Isso torna a missão dos avaliadores
+              ainda mais difícil. Muitas vezes, eles têm que selecionar um único
+              candidato entre uma série de profissionais qualificados. Dessa
+              forma, fica a dúvida: como se sair bem em uma entrevista de
+              emprego?
+            </p>
+
+            <p>
+              Se você busca seu primeiro emprego ou uma recolocação no mercado
+              de trabalho, clique no botão abaixo e cadastre-se em nosso banco
+              de talentos para poder se inscrever nas vagas.
+            </p>
+            <button class="button-description">Cadastre-se</button>
+          </div>
+        </div>
+      </main>
+      <div class="painel">
+        <h1>Principais Notícias</h1>
+        <p>
+          Acompanhe as principais notícias sobre emprego e mercado de trabalho.
+        </p>
+      </div>
+      <div class="blogs-container">
+        <div class="blog-box-1">
+          <img
+            class="img-blog"
+            src="./assets/img/img-curriculo.png"
+            alt="Imagem do blog - materia sobre curriculo"
+          />
+          <div class="container-resume-1">
+            <h3>A importância de um bom currículo</h3>
+            <p>
+              Nessa matéria conversmos com especialistas em Seleção para
+              sabermos o que os candidatos podem fazer para estruturar bem seus
+              currículos e assim poderem chamar a atenção dos recrutadores.
+            </p>
+          </div>
+        </div>
+        <div class="blog-box-1">
+          <img
+            class="img-blog"
+            src="./assets/img/img-entrevista.png"
+            alt="Imagem do blog - materia sobre curriculo"
+          />
+          <div class="container-resume-1">
+            <h3>Como se preparar para entrevista?</h3>
+            <p>
+              A Head Hunter Maria Pastora nos fala quais erros evitar no momento
+              de uma entrevista e como se preparar para melhorar o
+              aproveitamento dos candidatos nos processos seletivos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-box">
+            <div class="company-footer">
+              <img src="./assets/img/logo-rh1.png" alt="logo da empresa" />
+              <h2>Busca RH</h2>
+              <p>A busca do emprego certo é aqui.</p>
+            </div>
+          </div>
+          <div class="footer-box">
+            <div class="articles-footer">
+              <h2>Últimas Notícias</h2>
+              <ul class="footer-list footer-article-list">
+                <li>
+                  <a href="#">A importância de um bom currículo</a>
+                </li>
+                <li>
+                  <a href="#">Como se preparar para entrevista?</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Quais erros devo evitar durante uma entrevista?</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-box">
+            <h2>Acesse nossas redes</h2>
+            <ul class="footer-list">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>Linkedin</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <p>Osmar Viana - 2023 ©</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

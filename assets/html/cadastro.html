@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UFT-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Busca RH - Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="logo-header" src="../img/logo-rh2.png" />
+        <nav>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li>
+              <a href="#">Vagas +</a>
+              <div class="sub-menu-1">
+                <ul>
+                  <li><a href="./cadastro.html">Cadastre-se</a></li>
+                  <li><a href="./vagas.html">Inscreva-se</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-container">
+        <form class="form-container" action="#">
+          <div class="form-header">
+            <h1>Cadastre-se</h1>
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <label for="firstname">Nome completo</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Digite seu nome"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Digite seu email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="cpf">CPF</label>
+              <input
+                id="cpf"
+                type="number"
+                name="cpf"
+                placeholder="Digite seu CPF"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="identity">Identidade</label>
+              <input
+                id="identity"
+                type="number"
+                name="identity"
+                placeholder="Digite seu RG"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="birthdate">Nascimento</label>
+              <input
+                id="birthdate"
+                type="date"
+                name="birthdate"
+                placeholder="__/__/____"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="pis">PIS</label>
+              <input
+                id="pis"
+                type="number"
+                name="pis"
+                placeholder="Digite seu PIS"
+              />
+            </div>
+            <div class="input-box">
+              <label for="phone">Celular</label>
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                placeholder="(00) 00000-0000"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="escolaridade">Escolaridade</label>
+              <select style="display: block" name="escolaridade" required>
+                <option value="escolha">Escolha</option>
+                <option value="médio">Ensino médio</option>
+                <option value="superior">Superior completo</option>
+                <option value="superior">Superior incompleto</option>
+                <option value="pos">Pós completa</option>
+                <option value="pos">Pós incompleta</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <label for="cep">CEP</label>
+              <input
+                id="postcode"
+                type="number"
+                name="postcode"
+                placeholder="00000-000"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="address">Endereço</label>
+              <input
+                id="address"
+                type="text"
+                name="address"
+                placeholder="Digite seu endereço completo"
+                required
+              />
+            </div>
+          </div>
+          <div class="radio-group">
+            <div class="radio-inputs">
+              <h2>Gênero</h2>
+              <div class="radio-group">
+                <div class="radio-input">
+                  <input type="radio" id="female" name="gender" />
+                  <label class="label-radio" for="female">Feminino</label>
+                </div>
+
+                <div class="radio-input">
+                  <input type="radio" id="male" name="gender" />
+                  <label class="label-radio" for="male">Masculino</label>
+                </div>
+
+                <div class="radio-input">
+                  <input type="radio" id="others" name="gender" />
+                  <label class="label-radio" for="others">Outro</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="radio-inputs">
+              <div class="radio-title">
+                <h2>PCD?</h2>
+              </div>
+              <div class="radio-group">
+                <div class="radio-input">
+                  <input type="radio" id="yes1" name="pcd" />
+                  <label class="label-radio" for="yes1">Sim</label>
+                </div>
+
+                <div class="radio-input">
+                  <input type="radio" id="no1" name="pcd" />
+                  <label class="label-radio" for="no1">Não</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="radio-inputs">
+              <div class="radio-title">
+                <h2>1º Emprego?</h2>
+              </div>
+              <div class="radio-group">
+                <div class="radio-input">
+                  <input type="radio" id="yes2" name="job" />
+                  <label class="label-radio" for="yes2">Sim</label>
+                </div>
+
+                <div class="radio-input">
+                  <input type="radio" id="no2" name="job" />
+                  <label class="label-radio" for="no2">Não</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="radio-inputs">
+              <div class="radio-title">
+                <h2>Maior de 18?</h2>
+              </div>
+              <div class="radio-group">
+                <div class="radio-input">
+                  <input type="radio" id="yes3" name="maioridade" />
+                  <label class="label-radio" for="yes3">Sim</label>
+                </div>
+
+                <div class="radio-input">
+                  <input type="radio" id="no3" name="maioridade" />
+                  <label class="label-radio" for="no3">Não</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="save-button">Salvar</button>
+        </form>
+      </main>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-box">
+            <div class="company-footer">
+              <img src="../img/logo-rh1.png" alt="logo da empresa" />
+              <h2>Busca RH</h2>
+              <p>A busca do emprego certo é aqui.</p>
+            </div>
+          </div>
+          <div class="footer-box">
+            <div class="articles-footer">
+              <h2>Últimas Notícias</h2>
+              <ul class="footer-list footer-article-list">
+                <li>
+                  <a href="#">A importância de um bom currículo</a>
+                </li>
+                <li>
+                  <a href="#">Como se preparar para entrevista?</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Quais erros devo evitar durante uma entrevista?</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-box">
+            <h2>Acesse nossas redes</h2>
+            <ul class="footer-list">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>Linkedin</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <p>Osmar Viana - 2023 ©</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
