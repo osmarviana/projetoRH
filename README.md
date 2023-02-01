@@ -1,8 +1,8 @@
-# Projeto Vagas RH 👔
+# Projeto Vagas RH
 
-## Página para candidatos brealizarem cadastro e buscarem vagas de empregos.
+## Página para candidatos realizarem cadastro e buscarem vagas de empregos.
 
-[<img src="./telaProjetoVagas.gif" alt="gif do projetoRH">]
+<img src="./telaProjetoVagas.gif" alt="gif do projetoRH">
 
 ### Tecnologias utilizadas:
 
