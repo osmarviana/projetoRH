@@ -76,7 +76,7 @@ nav ul li:hover .sub-menu-1 ul li:hover {
 }
 
 .form-container {
-  margin: 20px auto;
+  margin: 50px auto;
   width: 500px;
   padding: 25px;
   border-radius: 25px;
@@ -119,6 +119,7 @@ select {
   border: 1px solid #cbcbcb95;
   border-radius: 25px;
   overflow: hidden;
+  display: block;
 }
 
 .form-container input:focus-visible {
@@ -137,7 +138,7 @@ select {
   color: #222222;
 }
 
-.form-container #mensagem {
+.form-container .input-padrao {
   width: 100%;
   height: 150px;
   background: #d7eefc;
@@ -150,7 +151,7 @@ select {
   resize: none;
 }
 
-.form-container #mensagem:focus-visible {
+.form-container .input-padrao:focus-visible {
   outline: 1px solid #32aafa;
 }
 

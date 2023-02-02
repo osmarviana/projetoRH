@@ -35,7 +35,6 @@
         <h1>Contato</h1>
         <label for="name">Nome</label>
         <input
-          style="display: block"
           id="name"
           type="text"
           name="name"
@@ -45,7 +44,6 @@
         <br />
         <label for="email">E-mail</label>
         <input
-          style="display: block"
           id="email"
           type="email"
           name="email"
@@ -53,9 +51,8 @@
           required
         />
         <br />
-        <label for="fone">Telefone</label>
+        <label for="phone">Telefone</label>
         <input
-          style="display: block"
           id="phone"
           type="tel"
           name="phone"
@@ -64,15 +61,15 @@
         />
         <br />
         <label for="select">Assunto</label>
-        <select style="display: block" name="assunto" required>
+        <select id="select" name="select" required>
           <option value="option">Selecione</option>
           <option value="Duvida">Dúvida</option>
           <option value="Reclamacao">Reclamação</option>
           <option value="Outro">Outro</option>
         </select>
-        <label for="textarea">Descrição</label>
+        <label for="message">Descrição</label>
         <textarea
-          id="mensagem"
+          id="message"
           class="input-padrao"
           placeholder="Deixe sua mensagem aqui"
           required

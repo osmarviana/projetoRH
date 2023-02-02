@@ -34,13 +34,13 @@
         </nav>
       </header>
       <main class="main-container">
-        <form class="form-container" action="#">
+        <form class="form-container" method="get" action="#">
           <div class="form-header">
             <h1>Cadastre-se</h1>
           </div>
           <div class="input-group">
             <div class="input-box">
-              <label for="firstname">Nome completo</label>
+              <label for="name">Nome completo</label>
               <input
                 id="name"
                 type="text"
@@ -110,17 +110,17 @@
             </div>
             <div class="input-box">
               <label for="escolaridade">Escolaridade</label>
-              <select style="display: block" name="escolaridade" required>
-                <option value="escolha">Escolha</option>
-                <option value="médio">Ensino médio</option>
-                <option value="superior">Superior completo</option>
-                <option value="superior">Superior incompleto</option>
-                <option value="pos">Pós completa</option>
-                <option value="pos">Pós incompleta</option>
+              <select name="escolaridade" required>
+                <option value="">Escolha</option>
+                <option value="Ensino médio">Ensino médio</option>
+                <option value="superior completo">Superior completo</option>
+                <option value="superior incompleto">Superior incompleto</option>
+                <option value="pós completa">Pós completa</option>
+                <option value="pós incompleta">Pós incompleta</option>
               </select>
             </div>
             <div class="input-box">
-              <label for="cep">CEP</label>
+              <label for="postcode">CEP</label>
               <input
                 id="postcode"
                 type="number"
@@ -145,17 +145,27 @@
               <h2>Gênero</h2>
               <div class="radio-group">
                 <div class="radio-input">
-                  <input type="radio" id="female" name="gender" />
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="feminino"
+                  />
                   <label class="label-radio" for="female">Feminino</label>
                 </div>
 
                 <div class="radio-input">
-                  <input type="radio" id="male" name="gender" />
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="masculino"
+                  />
                   <label class="label-radio" for="male">Masculino</label>
                 </div>
 
                 <div class="radio-input">
-                  <input type="radio" id="others" name="gender" />
+                  <input type="radio" id="others" name="gender" value="outro" />
                   <label class="label-radio" for="others">Outro</label>
                 </div>
               </div>
@@ -167,12 +177,12 @@
               </div>
               <div class="radio-group">
                 <div class="radio-input">
-                  <input type="radio" id="yes1" name="pcd" />
+                  <input type="radio" id="yes1" name="pcd" value="sim" />
                   <label class="label-radio" for="yes1">Sim</label>
                 </div>
 
                 <div class="radio-input">
-                  <input type="radio" id="no1" name="pcd" />
+                  <input type="radio" id="no1" name="pcd" value="não" />
                   <label class="label-radio" for="no1">Não</label>
                 </div>
               </div>
@@ -184,12 +194,12 @@
               </div>
               <div class="radio-group">
                 <div class="radio-input">
-                  <input type="radio" id="yes2" name="job" />
+                  <input type="radio" id="yes2" name="job" value="sim" />
                   <label class="label-radio" for="yes2">Sim</label>
                 </div>
 
                 <div class="radio-input">
-                  <input type="radio" id="no2" name="job" />
+                  <input type="radio" id="no2" name="job" value="não" />
                   <label class="label-radio" for="no2">Não</label>
                 </div>
               </div>
@@ -201,12 +211,12 @@
               </div>
               <div class="radio-group">
                 <div class="radio-input">
-                  <input type="radio" id="yes3" name="maioridade" />
+                  <input type="radio" id="yes3" name="maioridade" value="sim" />
                   <label class="label-radio" for="yes3">Sim</label>
                 </div>
 
                 <div class="radio-input">
-                  <input type="radio" id="no3" name="maioridade" />
+                  <input type="radio" id="no3" name="maioridade" value="não" />
                   <label class="label-radio" for="no3">Não</label>
                 </div>
               </div>
