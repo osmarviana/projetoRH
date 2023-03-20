@@ -1,0 +1,102 @@
+footer {
+  width: 100vw;
+  background-color: #ececec;
+  padding: 20px 0;
+  border-top: 5px solid #ccc;
+}
+
+footer h2,
+p,
+a {
+  color: #222222;
+}
+
+footer span {
+  color: #0e79c1;
+}
+
+footer h2 {
+  font-weight: bold;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.footer-box {
+  width: 31%;
+  padding: 1%;
+}
+
+.footer-box .company-name-footer,
+.footer-box .company-slogan,
+.footer-box .footer-titles {
+  margin-bottom: 15px;
+}
+
+.company-footer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-footer img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.footer-list li {
+  margin-bottom: 15px;
+}
+
+.footer-list a {
+  transition: 0.5s;
+  color: #0e79c1;
+}
+
+.footer-list a:hover {
+  color: #222222;
+}
+
+.footer-list span {
+  transition: 0.5s;
+  color: #0e79c1;
+}
+
+.footer-list span:hover {
+  color: #222222;
+}
+
+.articles-footer {
+  width: 80%;
+}
+
+.footer-list.footer-articles-list span {
+  display: block;
+}
+
+.fab {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+}
+
+.footer-bottom {
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 80px;
+}
+
+.footer-bottom .dev-name {
+  font-size: 14px;
+  font-weight: 700;
+}

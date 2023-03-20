@@ -1,303 +1,126 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Fjalla One", sans-serif;
+main {
+  max-width: 1440px;
 }
 
-body {
-  background-color: #f4f4f4;
-}
-
-.header {
+.container {
+  width: 100vw;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  background-color: #32aafa;
-  padding: 0 20px;
-  margin-bottom: 12px;
-}
-
-.header .logo-header {
-  width: 100px;
-}
-
-nav ul {
-  display: inline-flex;
-  list-style: none;
-}
-
-nav ul li {
-  width: 120px;
-  margin: 15px;
-  padding: 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 22px;
-  transition: 0.3s;
-}
-
-nav ul li a:hover {
-  color: #222222;
-}
-
-.sub-menu-1 {
-  display: none;
-}
-
-nav ul li:hover .sub-menu-1 {
-  display: block;
-  position: absolute;
-  background-color: #32aafa;
-  margin-top: 15px;
-  margin-left: -38px;
-}
-
-nav ul li:hover .sub-menu-1 ul {
-  display: block;
-}
-
-nav ul li:hover .sub-menu-1 ul li {
-  width: 140px;
-  text-align: center;
-  border-radius: 10px;
-  transition: 0.7s;
-}
-
-nav ul li:hover .sub-menu-1 ul li:hover {
-  background-color: #0e79c1;
+  justify-content: center;
 }
 
 .form-container {
+  /* width: 500px; */
   margin: 50px auto;
-  width: 500px;
   padding: 25px;
   border-radius: 25px;
+  border: 3px solid #cccccc;
   background-color: #ffffff;
   font-size: 18px;
   color: #222222;
-  border: 3px solid #cccccc;
-  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.form-control {
+  margin-bottom: 10px;
 }
 
 .form-container h1 {
   margin-bottom: 25px;
   color: #222222;
+  text-align: center;
 }
 
-.form-container h1::after {
-  content: "";
-  display: block;
-  width: 3rem;
-  height: 0.3rem;
-  background-color: #32aafa;
-  margin: 0 auto;
-  position: absolute;
-  border-radius: 10px;
-}
-
-.form-container label {
+.form-control label {
+  font-weight: 700;
   color: #32aafa;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
-.form-container input,
+.form-control input,
 select {
   width: 100%;
   background-color: #d7eefc;
   color: #222222;
   font-size: 16px;
-  padding: 15px 15px 10px;
-  margin-top: 15px;
+  padding: 10px 15px;
+  margin-top: 5px;
   border: 1px solid #cbcbcb95;
   border-radius: 25px;
-  overflow: hidden;
-  display: block;
 }
 
-.form-container input:focus-visible {
+.form-control input:focus-visible {
   outline: 1px solid #32aafa;
 }
 
-.form-container select:focus-visible {
+.form-control select:focus-visible {
   outline: 1px solid #32aafa;
 }
 
-.form-container select {
-  margin-bottom: 18px;
-}
-
-.form-container select option {
+.form-control select option {
   color: #222222;
 }
 
-.form-container .input-padrao {
+.form-control #message {
   width: 100%;
   height: 150px;
   background: #d7eefc;
   font-size: 18px;
   color: #222222;
   border-radius: 25px;
-  border: 1px solid #cbcbcb95;
-  padding: 15px;
-  margin-top: 15px;
+  /* border: 1px solid #cbcbcb95; */
+  padding: 20px;
+  margin-top: 5px;
   resize: none;
 }
 
-.form-container .input-padrao:focus-visible {
+.form-control #message:focus-visible {
   outline: 1px solid #32aafa;
 }
 
 .send-button {
   width: 100%;
-  height: 30px;
   background-color: #32aafa;
+  font-size: 20px;
+  font-weight: 700;
   color: #ffffff;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
   border-radius: 25px;
-  padding: 8px 10px;
-  margin-top: 15px;
+  border: none;
   cursor: pointer;
-  transition: 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .send-button:hover {
-  background-color: rgb(14, 121, 193);
+  background-color: #0e79c1;
   color: #ffffff;
 }
 
-footer {
-  background-color: #ececec;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 5px solid #ccc;
+/* ----ERRO VALIDACAO---- */
+
+.form-control small {
+  margin-left: 20px;
+  visibility: hidden;
 }
 
-footer h2,
-p,
-a {
-  color: #222222;
+.form-control.error small {
+  visibility: visible;
+  color: #ff0000;
+  font-size: 13px;
 }
 
-footer span {
-  color: #0e79c1;
+.form-control.success small {
+  visibility: hidden;
 }
 
-footer h2 {
-  font-weight: bold;
+.form-control .erro-preenchimento {
+  border: 1px solid #ff0000;
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
+/* ALERTA ACERTO */
 
-.footer-box {
-  width: 31%;
-  padding: 1%;
-}
-
-.footer-box h2,
-p {
-  margin-bottom: 15px;
-}
-
-.company-footer {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.company-footer img {
-  width: 80px;
-  margin-bottom: 10px;
-}
-
-.footer-list li {
-  margin-bottom: 15px;
-}
-
-.footer-list a {
-  transition: 0.5s;
-  color: #0e79c1;
-}
-
-.footer-list a:hover {
-  color: #222222;
-}
-
-.footer-list span {
-  transition: 0.5s;
-  color: #0e79c1;
-}
-
-.footer-list span:hover {
-  color: #222222;
-}
-
-.articles-footer {
-  width: 80%;
-}
-
-.footer-list.footer-articles-list span {
-  display: block;
-}
-
-.fab {
-  font-size: 30px;
-  margin-left: 10px;
-}
-
-.footer-bottom {
-  border-top: 1px solid #ccc;
-}
-
-.footer-bottom {
-  width: 100%;
-  font-weight: 600;
-  padding-top: 40px;
-  padding-left: 80px;
-}
-
-.footer-bottom p {
-  font-size: 14px;
-}
-
-@media (max-width: 768px) {
-  .header nav {
-    width: 90%;
-  }
-
-  .header nav ul {
-    gap: 20px;
-  }
-
-  .header nav ul li {
-    font-size: 16px;
-  }
-
-  .form-container {
-    width: 80%;
-  }
-
-  .form-container #mensagem {
-    width: 90%;
-  }
+.form-control .sucesso-preenchimento {
+  border: 1px solid #159c32;
 }

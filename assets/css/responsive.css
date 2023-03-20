@@ -1,0 +1,340 @@
+@media (max-width: 1024px) {
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .blog-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  /* FOOTER  */
+
+  .footer-bottom {
+    padding-top: 10px;
+  }
+
+  /* CADASTRO */
+
+  .form-control input,
+  select {
+    width: 250px;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  /* HAMBURGER */
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .main-ul {
+    position: fixed;
+    left: 800px;
+    top: 105px;
+    gap: 0;
+    background-color: var(--main-color);
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .main-ul.active {
+    left: 0;
+  }
+
+  .header .header-container nav ul .nav-item:hover .sub-menu-1 {
+    left: 0;
+    margin-left: 0;
+  }
+
+  nav ul .nav-item:hover .sub-menu-1 ul .nav-item {
+    width: 100vw;
+  }
+
+  /* HAMBURGER */
+
+  .search-form h2 {
+    font-size: 36px;
+  }
+
+  .form-container {
+    flex-wrap: wrap;
+  }
+
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .blog-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  /* FOOTER  */
+
+  .footer-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .company-footer {
+    width: 100%;
+  }
+
+  .articles-footer {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  /* CADASTRO  */
+
+  .form-container {
+    flex-direction: row;
+  }
+
+  .input-groups {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .form-control input,
+  select {
+    width: 100%;
+  }
+
+  .save-button {
+    width: 100%;
+  }
+
+  /* INSCREVA-SE */
+
+  .form-container-register {
+    flex-wrap: wrap;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 425px) {
+  .content {
+    gap: 20px;
+  }
+
+  .content .video {
+    width: 350px;
+  }
+
+  .container-description p {
+    font-size: 15px;
+  }
+
+  .blogs-container {
+    padding: 30px;
+  }
+
+  .blog-box-1 {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .painel {
+    text-align: center;
+  }
+
+  .painel h2 {
+    font-size: 30px;
+  }
+
+  .painel p {
+    font-size: 16px;
+  }
+
+  /* FOOTER  */
+
+  .footer-container {
+    gap: 0;
+  }
+
+  .footer-box .articles-footer {
+    display: none;
+  }
+
+  .footer-box h2,
+  span {
+    display: none;
+  }
+
+  .footer-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .footer-list i {
+    font-size: 30px;
+  }
+
+  /* CONTATO */
+
+  body {
+    background-color: #fff;
+  }
+
+  .form-container {
+    border: none;
+    padding: 15px;
+  }
+
+  .search-form {
+    padding: 5px;
+  }
+
+  .search-form h2 {
+    font-size: 26px;
+  }
+
+  .main-container {
+    margin-bottom: 0;
+  }
+
+  /* CADASTRO  */
+
+  .search-form .search-title {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+
+  .search-form .search-info {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+
+  .form-cad-container {
+    width: 100%;
+    margin: 15px 5px;
+    padding: 35px 10px;
+  }
+  .input-group {
+    padding: 0;
+    width: 100%;
+  }
+
+  .form-header h1 {
+    font-size: 36px;
+  }
+
+  /* INSCREVA-SE */
+
+  body {
+    background-color: #fff;
+  }
+
+  .search-form {
+    border: none;
+  }
+
+  .lastjobs-container {
+    padding: 30px 5px;
+  }
+
+  .lastjobs-list {
+    padding: 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .company-box .company-logo {
+    width: 50px;
+  }
+
+  .lastjobs-container .lastjobs-title {
+    font-size: 28px;
+  }
+
+  .lastjobs-li {
+    height: 150px;
+    border-bottom: none;
+  }
+
+  .more-info-content {
+    width: 100%;
+  }
+
+  .scale {
+    height: 900px;
+  }
+}
+
+@media (max-width: 320px) {
+  .content .video {
+    width: 300px;
+  }
+
+  /* CONTATO */
+
+  .form-container {
+    /* width: 300px; */
+    border: none;
+  }
+
+  /* CADASTRO */
+
+  .form-cad-container {
+    width: 98%;
+  }
+
+  .input-group label {
+    font-size: 16px;
+  }
+
+  .form-control input,
+  select {
+    font-size: 14px;
+  }
+
+  /* INSCREVA-SE */
+  .company-box .company-title {
+    font-size: 12px;
+  }
+
+  .lastjobs-container .lastjobs-title {
+    font-size: 22px;
+  }
+}

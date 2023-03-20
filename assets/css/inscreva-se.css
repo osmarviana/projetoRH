@@ -1,0 +1,255 @@
+main {
+  max-width: 1440px;
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container-register {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.search-form {
+  width: 95%;
+  margin: 30px auto;
+  padding: 25px;
+  border: 3px solid #cccccc;
+  border-radius: 25px;
+  background-color: #ffffff;
+  font-size: 18px;
+  color: #222222;
+}
+
+.search-form .search-title,
+.search-form .search-info {
+  margin-left: 15px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+
+.search-form .search-title {
+  font-size: 46px;
+}
+
+.search-form .search-info {
+  font-size: 22px;
+}
+
+.search-form input,
+select {
+  width: 100%;
+  background-color: #d7eefc;
+  color: #222222;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: 1px solid #cbcbcb95;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.search-form .btn-search {
+  width: 100%;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.search-form .btn-search a {
+  color: var(--primary-text-color);
+}
+
+.search-form .btn-search:hover {
+  background-color: var(--secondary-text-color);
+}
+
+.search-form input:focus-visible {
+  outline: 1px solid #32aafa;
+}
+
+.search-form select:focus-visible {
+  outline: 1px solid #32aafa;
+}
+
+.lastjobs-container {
+  width: auto;
+  padding: 30px 20px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accordion {
+  width: 100%;
+  height: 100%;
+}
+
+.lastjobs-nav {
+  width: 100%;
+  /* padding: 15px; */
+}
+
+.lastjobs-ul {
+  width: 100%;
+  margin-top: 0;
+}
+
+.lastjobs-li {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.lastjobs-container .lastjobs-title {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.lastjobs-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+}
+
+.company-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.company-box .company-logo {
+  width: 100px;
+}
+
+.company-box .company-title {
+  font-size: 16px;
+  text-align: center;
+}
+
+.company-box .company-name {
+  font-size: 14px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+.company-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-location .material-symbols-outlined {
+  color: var(--secondary-color);
+}
+
+.company-location .location {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.job-type .type {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--secondary-text-color);
+}
+
+.more-information {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.more-information:hover {
+  color: var(--main-color);
+}
+
+.btnjobs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnjobs-container .btn-jobs {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.btnjobs-container .btn-jobs:hover {
+  color: var(--secondary-text-color);
+}
+
+/* MORE INFO  */
+
+.more-info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.more-info-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-text-color);
+  gap: 10px;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.more-info-content .company-logo {
+  width: 100px;
+  align-self: center;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.more-info-content .company-name-plus {
+  font-size: 32px;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 15px;
+}
+
+.more-info-content .span {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.more-info-content .company-info-plus {
+  font-size: 13px;
+  color: var(--primary-text-color);
+}
+
+/* ITEM ATIVO JS  */
+
+.scale {
+  height: 600px;
+}

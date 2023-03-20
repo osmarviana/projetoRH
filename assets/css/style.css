@@ -1,0 +1,231 @@
+main {
+  max-width: 1440px;
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+picture {
+  width: 100vw;
+}
+
+picture .banner {
+  width: 100%;
+}
+
+.search-form {
+  width: 100%;
+  margin-top: 10px;
+  /* margin-bottom: 30px; */
+  padding: 40px;
+  border-radius: 25px;
+  font-size: 18px;
+  color: var(--secondary-text-color);
+}
+
+.form-container {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.search-form h2 {
+  margin-left: 15px;
+  margin-bottom: 20px;
+  color: var(--secondary-text-color);
+  font-size: 46px;
+}
+
+.search-form input,
+select {
+  width: 100%;
+  background-color: #d7eefc;
+  border: 1px solid #a2a2a2;
+  font-size: 16px;
+  font-weight: 300;
+  color: #666666;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+.search-form .btn-search {
+  width: 100%;
+  background-color: #222222;
+  border: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.search-form .btn-search a {
+  color: var(--primary-text-color);
+}
+
+.search-form .btn-search:hover {
+  background-color: #0e79c1;
+}
+
+.search-form input:focus-visible {
+  outline: 1px solid #32aafa;
+}
+
+.search-form select:focus-visible {
+  outline: 1px solid #32aafa;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.painel-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 30px 0;
+}
+
+.content .video {
+  width: 650px;
+  height: auto;
+  border: none;
+  border-radius: 25px;
+}
+
+.container-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-description p {
+  width: 100%;
+  color: #222222;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.button-description {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  background-color: #32aafa;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.button-description a {
+  color: #fff;
+}
+
+.container-description .button-description:hover {
+  background-color: #0e79c1;
+  color: #f5f5f5;
+}
+
+.blogs-container {
+  padding: 0 60px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 55px;
+  margin-bottom: 50px;
+}
+
+.painel-secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: -15px;
+}
+
+.painel h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #222222;
+  font-weight: bold;
+}
+
+.painel p {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #0e79c1;
+}
+
+.blog-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.blog-box-1 {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-resume-1 h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222222;
+  cursor: pointer;
+}
+
+.resume-blog {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #222;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.resume-blog:hover {
+  color: #0e79c1;
+}
+
+.blog-box-1 .img-blog {
+  width: 300px;
+  height: 200px;
+  border-radius: 25px;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
