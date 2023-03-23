@@ -237,7 +237,7 @@ select {
   margin-bottom: 15px;
 }
 
-.more-info-content .span {
+.span-plus {
   font-size: 15px;
   font-weight: 700;
   color: var(--main-color);

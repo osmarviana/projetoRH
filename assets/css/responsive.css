@@ -250,6 +250,7 @@
     width: 100%;
     margin: 15px 5px;
     padding: 35px 10px;
+    border: none;
   }
   .input-group {
     padding: 0;
