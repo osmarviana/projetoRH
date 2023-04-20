@@ -125,14 +125,16 @@ select {
 }
 
 .lastjobs-list {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   border-bottom: 1px solid #ccc;
   padding: 15px;
 }
 
 .company-box {
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,6 +156,7 @@ select {
   color: var(--secondary-color);
 }
 .company-location {
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,10 +171,24 @@ select {
   margin-left: 10px;
 }
 
+.job-type {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .job-type .type {
   font-size: 15px;
   font-weight: 700;
   color: var(--secondary-text-color);
+}
+
+.info {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .more-information {
@@ -180,6 +197,7 @@ select {
   color: var(--secondary-color);
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  user-select: none;
 }
 
 .more-information:hover {
